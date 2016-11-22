@@ -1,0 +1,12 @@
+.pageView {
+    /*background: #EEEEEE;*/
+    position: absolute;
+    left: 0px;
+    right: 0px
+}
+
+.backView {
+    position: absolute;
+    left: 0px;
+    right: 0px
+}

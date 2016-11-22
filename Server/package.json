@@ -1,0 +1,16 @@
+{
+  "name": "appdone-server",
+  "version": "0.0.1",
+  "description": "server for app done application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yale Liu",
+  "license": "ISC",
+  "dependencies": {
+    "express":"*",
+    "body-parser":"*",
+    "mongoose":"*"
+  }
+}
