@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var path = require('path');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var fs = require('fs');
@@ -26,7 +27,7 @@ app.use('/api/pages',page);
 app.use('/api/contents',content);
 app.use('/json',json);
 
-app.set('port',(process.env.PORT || 3456));
+app.set('port',(process.env.PORT || 3000));
 
 app.listen(app.get('port'), function(){
     console.log('Running on port ' + app.get('port'));
