@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 var fs = require('fs');
 
 
-// routers ---------------------   //
+// routers ----------------------   //
 var auth = require('./router/auth');
 var index = require('./router/index');
 var content = require('./router/content');
