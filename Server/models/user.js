@@ -16,3 +16,5 @@ var userSchema = new Schema(
         update_date:{ type: Date, default: Date.now}
     }
 );
+
+var User = module.exports = mongoose.model('User', userSchema);

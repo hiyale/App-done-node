@@ -16,3 +16,5 @@ var actionSchema = mongoose.Schema(
         }
     }
 );
+
+var Action = module.exports = mongoose.model('Action', actionSchema);

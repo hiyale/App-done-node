@@ -1,0 +1,13 @@
+{
+    "components":{
+        "pageView":{
+            "backFillColor":"white",
+            "backStrokeColor":"red",
+            "titleStrokeColor":"red",
+            "titleFillColor":"red"
+        }
+    },
+    "application":{
+        
+    }
+}
