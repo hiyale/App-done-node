@@ -15,6 +15,7 @@
 *.launch
 .settings/
 .vscode/
+/backup
 
 # misc
 /.sass-cache
