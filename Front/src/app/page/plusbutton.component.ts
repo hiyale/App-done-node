@@ -3,7 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
     selector: 'plusbtn',
     template: `
-        <h3>add some</h3>
+        <button md-fab color="warn">
+            <md-icon class="md-24">add</md-icon>
+        </button>
     `
 })
 export class PlusButtonComponent implements OnInit {

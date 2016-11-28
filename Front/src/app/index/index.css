@@ -1,0 +1,15 @@
+.tab-style{
+    border-radius: 10px 10px 0px 0px
+}
+
+.btn-group-gray {
+    background-color: #dfdfdf;
+    height: 50px;
+    vertical-align: bottom;
+    position:relative;
+}
+
+[bottom-absolute] {
+    position: inherit;
+    bottom:   0;
+}

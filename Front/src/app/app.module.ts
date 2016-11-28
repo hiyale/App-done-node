@@ -6,20 +6,24 @@ import { AppDone1RoutingModule } from './app-routing.module';
 import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { PageControllerComponent } from './page/pageController.component';
+import { StructureComponent } from './page/structure.component';
 import { PageViewComponent } from './page/pageview.component';
 import { PlusButtonComponent } from './page/plusbutton.component';
 import { LineDynamicComponent } from './page/lineDynamic.component';
 import { BackViewComponent } from './page/backView.component';
+import { IndexComponent } from './index/index.component'
+import { AppViewComponent } from './index/appview.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageControllerComponent,
+    StructureComponent,
     PageViewComponent,
     PlusButtonComponent,
     LineDynamicComponent,
-    BackViewComponent
+    BackViewComponent,
+    IndexComponent,
+    AppViewComponent
   ],
   imports: [
     AppDone1RoutingModule,

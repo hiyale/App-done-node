@@ -5,7 +5,7 @@ import { DrawService } from '../service/draw.service'
 import { UtilityService } from '../service/Utility'
 
 @Component({
-  selector: 'page-controller',
+  selector: 'structure',
   template: `
     <backView (clickEvent) = "clickEvent($event)"></backView>
     <line-dynamic></line-dynamic>
@@ -17,10 +17,10 @@ import { UtilityService } from '../service/Utility'
     <pageView [pageW] = "150" [pageH] = "120" [pageT] = "300" [pageL] = "300" 
     [viewID] = "'pageView0002'" (clickEvent) = "clickEvent($event)" (openPage) = "openPage($event)"></pageView>
   `,
-  styleUrls: ['./page.component.css'],
+  styleUrls: ['page.css'],
   providers: [DrawService, UtilityService]
 })
-export class PageControllerComponent implements AfterViewInit {
+export class StructureComponent implements AfterViewInit {
   @ViewChild(LineDynamicComponent)
   private lineDynamic: LineDynamicComponent;
   point:Array<number>;

@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PageControllerComponent } from './page/pageController.component'
+import { StructureComponent } from './page/structure.component'
 import { AppComponent } from './app.component'
+import { IndexComponent } from './index/index.component'
+import { AppViewComponent } from './index/appview.component'
 
 const routes: Routes = [
-  {path:'', redirectTo: 'pages', pathMatch: 'full'},
-  {path:'pages', component: PageControllerComponent}
+  {path: '', component: IndexComponent},
+  {path:'app', component: AppViewComponent},
+  {path:'app/structure', component: StructureComponent}
+// {path:'', redirectTo: 'pages', pathMatch: 'full'},
 ];
 
 @NgModule({

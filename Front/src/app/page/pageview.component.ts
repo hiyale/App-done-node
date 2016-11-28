@@ -9,7 +9,7 @@ import { UtilityService } from '../service/Utility'
       [style.top.px]="pageT" [style.left.px]="pageL" (dblclick)="doubleClick($event)">
       </canvas>
     </div>`,
-    styleUrls: ['./page.component.css']
+    styleUrls: ['page.css']
 })
 export class PageViewComponent implements OnInit {
 
