@@ -11,6 +11,7 @@ var LocalStrategy = require('passport-local');
 var passport = require('passport');
 var flash = require('connect-flash');
 var mongo = require('mongodb');
+var morgan = require('morgan');
 
 mongoose.connect('mongodb://localhost/appdone');
 var db = mongoose.connection;
@@ -32,10 +33,12 @@ app.use(express.static(__dirname + '/public'));
 app.use(cookieParser());
 
 app.use(session({
-    secret: 'yimeng',
+    secret: 'yimeng1901',
     saveUninitialized: true,
     resave: true
 }));
+
+app.use(morgan('dev'));
 
 app.use(passport.initialize());
 app.use(passport.session());
