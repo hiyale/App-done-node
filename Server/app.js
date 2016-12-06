@@ -74,6 +74,10 @@ app.use('/api/pages',page);
 app.use('/api/contents',content);
 app.use('/json',json);
 
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname,'public/index.html'));
+});
+
 app.set('port',(process.env.PORT || 3000));
 
 app.listen(app.get('port'), function(){
