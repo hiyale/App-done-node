@@ -15,10 +15,13 @@ var morgan = require('morgan');
 
 mongoose.connect('mongodb://localhost/appdone');
 var db = mongoose.connection;
-
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log("==========   database connected   ========");
+});
 
 // routers ---------------------   //
-var auth = require('./router/auth');
+var user = require('./router/user');
 var index = require('./router/index');
 var content = require('./router/content');
 var page = require('./router/page');
@@ -69,7 +72,7 @@ app.use(function(req, res, next){
 });
 
 app.use('/', index);
-app.use('/auth',auth);
+app.use('/user',user);
 app.use('/api/pages',page);
 app.use('/api/contents',content);
 app.use('/json',json);

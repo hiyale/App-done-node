@@ -9,6 +9,7 @@
   "author": "Yale Liu",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^1.0.1",
     "bcryptjs": "^2.3.0",
     "body-parser": "*",
     "connect-flash": "^0.1.1",
