@@ -15,7 +15,7 @@ var userSchema = new Schema(
         avator: String,
         usergroup: String,
         isAuthed: Boolean,
-        invitcode:{ type:String, unique:true },
+        invitecode:{ type:String, unique:true },
         create_date:{ type: Date, default: Date.now},
         update_date:{ type: Date, default: Date.now}
     }
@@ -91,7 +91,7 @@ module.exports.updateUser = function(id, user, options, callback){
         },
         'avator': user.avator,
         'usergroup': user.usergroup,
-        'invitcode': user.invitcode
+        'invitecode': user.invitecode
     }
     Page.findOneAndUpdate(query, update, options, callback);
 }

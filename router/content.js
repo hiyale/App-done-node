@@ -7,7 +7,6 @@ router.get('/:page', function(req, res){
         if(err){
             throw err;
         }
-        res.setHeader("Access-Control-Allow-Origin","*");
         res.json(contents);
     })
 });
@@ -18,7 +17,6 @@ router.post('/', function(req, res){
         if(err){
             throw err;
         }
-        res.setHeader("Access-Control-Allow-Origin","*");
         res.json(content);
     })
 });
@@ -30,7 +28,6 @@ router.put('/:_id', function(req, res){
         if(err){
             throw err;
         }
-        res.setHeader("Access-Control-Allow-Origin","*");
         res.json(content);
     })
 });
@@ -41,7 +38,6 @@ router.delete('/:_id', function(req, res){
         if(err){
             throw err;
         }
-        res.setHeader("Access-Control-Allow-Origin","*");
         res.json(content);
     })
 })
