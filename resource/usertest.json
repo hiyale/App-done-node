@@ -1,0 +1,2 @@
+[{"username" : "hiyale", "password" : "zazjly", "email" : "hiyale@163.com", "name" :{ "firstname" : "yale", "lastname" : "liu" }, "avator" : "", "usergroup" : "admin", "invitecode" : "1234abcd", "isAuthed" : false, "mobile" : "" },
+{"username" : "hijenny", "password" : "zazjly", "email" : "jenny@163.com", "name" :{ "firstname" : "jenny", "lastname" : "liu" }, "avator" : "", "usergroup" : "admin", "invitecode" : "1245abcd", "isAuthed" : false, "mobile" : "18616196230" }]
