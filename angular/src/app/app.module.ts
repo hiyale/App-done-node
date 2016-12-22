@@ -13,6 +13,7 @@ import { LineDynamicComponent } from './page/lineDynamic.component';
 import { BackViewComponent } from './page/backView.component';
 import { IndexComponent } from './index/index.component'
 import { AppViewComponent } from './index/appview.component'
+import 'hammerjs';
 
 @NgModule({
   declarations: [
