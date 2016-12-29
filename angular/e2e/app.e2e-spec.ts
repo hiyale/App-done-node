@@ -1,10 +1,10 @@
-import { AppDone1Page } from './app.po';
+import { ProjectPage } from './app.po';
 
-describe('app-done1 App', function() {
-  let page: AppDone1Page;
+describe('project App', function() {
+  let page: ProjectPage;
 
   beforeEach(() => {
-    page = new AppDone1Page();
+    page = new ProjectPage();
   });
 
   it('should display message saying app works', () => {

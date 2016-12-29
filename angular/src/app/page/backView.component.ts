@@ -3,7 +3,7 @@ import { Component, OnInit, ViewChild, HostListener, Output, EventEmitter } from
 @Component({
     selector: 'backView',
     template: `<canvas #backView class="backView"></canvas>`,
-    styleUrls: ['page.css']
+    styleUrls: ['./page.css']
 })
 export class BackViewComponent implements OnInit {
     constructor() { }

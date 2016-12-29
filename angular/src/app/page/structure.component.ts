@@ -17,7 +17,7 @@ import { UtilityService } from '../service/Utility'
     <pageView [pageW] = "150" [pageH] = "120" [pageT] = "300" [pageL] = "300" 
     [viewID] = "'pageView0002'" (clickEvent) = "clickEvent($event)" (openPage) = "openPage($event)"></pageView>
   `,
-  styleUrls: ['page.css'],
+  styleUrls: ['./page.css'],
   providers: [DrawService, UtilityService]
 })
 export class StructureComponent implements AfterViewInit {

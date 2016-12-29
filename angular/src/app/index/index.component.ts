@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'index',
-    templateUrl: `
+    template: `
         <h3> index </h3>
     `,
-    styleUrls: ['index.css']
+    styleUrls: ['./index.css']
 })
 export class IndexComponent implements OnInit {
     constructor() { }

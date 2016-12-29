@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-view',
-    templateUrl: `
+    template: `
         <div class="btn-group-gray">
             <button md-raised-button bottom-absolute color="primary" 
                 class="tab-style" routerLink="/page">Left</button>
@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
         </div>
         <structure></structure>
     `,
-    styleUrls: ['index.css']
+    styleUrls: ['./index.css']
 })
 export class AppViewComponent implements OnInit {
     constructor() { }
