@@ -16,6 +16,22 @@ import { UtilityService } from '../service/Utility'
     [viewID] = "'pageView0003'" (clickEvent) = "clickEvent($event)" (openPage) = "openPage($event)"></pageView>
     <pageView [pageW] = "150" [pageH] = "120" [pageT] = "300" [pageL] = "300" 
     [viewID] = "'pageView0002'" (clickEvent) = "clickEvent($event)" (openPage) = "openPage($event)"></pageView>
+    <md-sidenav-container>
+    <md-sidenav #start (open)="closeStartButton.focus()">
+        Start Sidenav.
+        <br>
+        <button md-button #closeStartButton (click)="start.close()">Close</button>
+    </md-sidenav>
+    <md-sidenav #end align="end">
+        End Sidenav.
+        <button md-button (click)="end.close()">Close</button>
+    </md-sidenav>
+
+My regular content. This will be moved into the proper DOM at runtime.
+<button md-button (click)="start.open()">Open start sidenav</button>
+<button md-button (click)="end.open()">Open end sidenav</button>
+
+</md-sidenav-container>
   `,
   styleUrls: ['./page.css'],
   providers: [DrawService, UtilityService]
