@@ -11,8 +11,9 @@ import { PageViewComponent } from './page/pageview.component';
 import { PlusButtonComponent } from './page/plusbutton.component';
 import { LineDynamicComponent } from './page/lineDynamic.component';
 import { BackViewComponent } from './page/backView.component';
-import { IndexComponent } from './index/index.component'
-import { AppViewComponent } from './index/appview.component'
+import { IndexComponent } from './index/index.component';
+import { AppViewComponent } from './index/appview.component';
+import { SidebarComponent } from './index/sidebar.component';
 import 'hammerjs';
 
 @NgModule({
@@ -24,7 +25,8 @@ import 'hammerjs';
     LineDynamicComponent,
     BackViewComponent,
     IndexComponent,
-    AppViewComponent
+    AppViewComponent,
+    SidebarComponent
   ],
   imports: [
     AppDone1RoutingModule,

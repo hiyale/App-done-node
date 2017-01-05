@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidebarComponent } from './sidebar.component'
 
 @Component({
     selector: 'app-view',
@@ -12,6 +13,7 @@ import { Component, OnInit } from '@angular/core';
                 class="tab-style" routerLink="/">Right</button>
         </div>
         <structure></structure>
+        <sidebar class="sidebar"></sidebar>
     `,
     styleUrls: ['./index.css']
 })
